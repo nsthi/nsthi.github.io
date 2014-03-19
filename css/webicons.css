@@ -798,6 +798,19 @@
 .svg .webicon.tumblr {
   background: url("webicons/webicon-tumblr.svg"); }
 
+.no-svg .webicon.exposure {
+  background: url("webicons/webicon-exposure-m.png"); }
+
+.no-svg .webicon.exposure.large {
+  background: url("webicons/webicon-exposure.png"); }
+
+.no-svg .webicon.exposure.small {
+  background: url("webicons/webicon-exposure-s.png"); }
+
+.svg .webicon.exposure {
+  background: url("webicons/webicon-exposure.png");
+  background-size: 30px auto;}
+
 .no-svg .webicon.twitter {
   background: url("webicons/webicon-twitter-m.png"); }
 

@@ -3,11 +3,11 @@
 
 /* Media Query - Larger than desktop */
 @media (min-width: 960px) {
-
   h3.vertical-text {
     color: #222;
     text-align: center;
     position: relative;
+		-webkit-transform:rotate(-90deg);
     transform: rotate(-90deg);
     top: 15rem;
     right: 7rem;
@@ -66,23 +66,27 @@ h3.vertical-text{
   -webkit-align-items:center;
 
   flex-flow: row wrap; 
-  flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
 
-  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
   flex-direction: row;
+  -webkit-flex-direction: row;
 
   justify-content: space-around;
   -webkit-justify-content:space-around;
 }
 
 #portfolio > * { 
+	-webkit-flex: auto;
   flex: auto; 
   width: 200px; 
 }
 
 #portfolio > * img { 
-  width: 95%; 
-  max-width: 100%
+  width: 276px; /**276px = 95%**/
+  max-width: 568px; /**568px = 100%**/
   height: auto; 
 }
 
@@ -92,7 +96,7 @@ nav{
 
 #main > div {
   display: none;
-  margin: 0% 0;
+  margin: 0 0;
 }
 
 hr.style {
@@ -157,7 +161,7 @@ i {
 ul{
   padding: 0px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 2.1rem;
 }
 
 ul li{
@@ -179,7 +183,6 @@ ul li{
 .home:hover, .writing:hover{
   background-color: #fff;
   color: #325172;
-  border: 2px solid #325172;
 }
 
 .photo, .video{
@@ -189,7 +192,6 @@ ul li{
 .photo:hover, .video:hover{
   background-color: #fff;
   color: #479ad1;
-  border: 2px solid #479ad1;
 }
 
 .contact, .credits {
@@ -199,7 +201,6 @@ ul li{
 .contact:hover, .credits:hover{
   background-color: #fff;
   color: #afafaf;
-  border: 2px solid #afafaf;
 }
 
 ul a {

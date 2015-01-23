@@ -1,58 +1,113 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>neil sethi</title>
-    <meta name="description" content="My name's Neil Sethi. Formerly at eCommHub, currently at Dropbox. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="icon" type="image/png" href="favicon.png">-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/webicons.css">
-    <script src="js/modernizr.min.js"></script>
+	<!-- 
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		“One must still have chaos in oneself 
+		to be able to give birth to a dancing star.” 
+		- Friedrich Nietzsche 
 
-      ga('create', 'UA-49074811-1', 'nsthi.github.io');
-      ga('send', 'pageview');
+		I'm not a Nietzsche follower, but I think
+		it's a pretty great quote. ;)
 
-    </script>
-  </head>
+	--> 
 
-	<body>
-      <div class="header">
-      	<h1>neil sethi</h1>
-      </div>
-    	<p>
-        <img src="img/bay.jpeg" style="max-width:484px"></img></br></br>
-        i'm a recent graduate from Emory University, where
-        i majored in <br />
-        <a href="http://http://mathcs.emory.edu/" target="_blank">computer science.</a>
-        i'm currently <a href="http://youtu.be/Y4DAB0zxWS0">rotating</a> at <a href="http://dropbox.com" target="_blank">Dropbox.</a>
-      </p>
-			<p>
-        i enjoy <a href="http://nsthi.exposure.co" target="_blank">photography</a>, live music, and football (both kinds).</br>
-				i was born and raised in atlanta, but i'm currently in san francisco.
-			</p>
-      <p>
-        <a href="mailto:hello@nsthi.com">connect with me</a>!
-        i'd love to hear from you.
-      </p>
-      
-      <div class="social">
-        <a class="no-svg webicon exposure" target="_blank" href="http://nsthi.exposure.co">Exposure</a>
-        <a class="webicon twitter" target="_blank" href="http://www.twitter.com/nsthi">Twitter</a>
-        <a class="webicon medium" target="_blank" href="http://www.medium.com/@nsthi">Medium</a>
-        <a class="webicon github"  target="_blank" href="http://www.github.com/nsthi">Github</a>
-        <a class="webicon instagram"  target="_blank" href="http://www.instagram.com/nsthi">Instagram</a>
-        <a class="webicon lastfm"  target="_blank" href="http://www.last.fm/user/nsthi">Last.fm</a>
-        <a class="webicon soundcloud"  target="_blank" href="http://www.soundcloud.com/imp0rt">SoundCloud</a>
-        <a class="webicon spotify"  target="_blank" href="http://www.spotify.com/@nsthi">Spotify</a>
-      </div> <!-- end social div -->
-  </body>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>neil sethi</title>
+
+	<meta name="description" content="my name is neil sethi. welcome to my webpage.">
+	<meta name="author" content="neil sethi">
+        <link rel="icon" type="image/png" href="favicon.png" />
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+	<div class="container" style="margin-top: 40px">
+		<div class="row">
+			<div class="three columns"> <!-- 3 Columns for navbar -->
+				<div id="navigation">
+					<span><h3 class="vertical-text">navigation</h3></span>
+					<nav><ul>
+		          	<a href="index.html"><li class="home">home</li></a>
+		          	<a href="writing.html"><li class="writing">writing</li></a>
+		          	<a href="photo.html"><li class="photo">photo</li></a>
+		          	<a href="video.html"><li class="video">video</li></a>
+		          	<a href="contact.html"><li class="contact">contact</li></a>
+		          	<a href="credits.html"><li class="credits">credits</li></a>
+					</ul></nav>
+				</div><!-- navigation -->
+			</div> <!-- three columns --> 
+			<div class="ten columns">
+				<div id="main"> <!-- for loading different sections -->
+					<div id="home_section" style="display:inline" class="active	">
+				        <h1>neil sethi</h1>
+						<hr class="style" />
+						<div class="four columns">
+							<img src="images/portrait.jpg" width="100%"/>
+						</div>
+						<div class="five columns">
+							i'm a recent graduate from Emory University, and i'm currently 
+							<a href="http://youtu.be/Y4DAB0zxWS0">rotating</a> at <a href="http://dropbox.com" target="_blank">Dropbox.</a>
+					      	</p><p>i enjoy <a href="http://nsthi.exposure.co" target="_blank">photography</a>, 
+					        live music, and football (both kinds). i was born and raised in atlanta, and i'm currently in san francisco.
+							</p><p> want to get a coffee or generate a list of puns together? <a href="mailto:hello@nsthi.com">send me an email</a>!
+					      	</p>
+				      	</div>
+				    </div><!-- home section --> 
+				</div> <!-- main-->
+			</div><!--ten columns -->
+		</div><!-- row-->
+	</div><!-- container -->
+
+<!-- End Body
+================================================== -->
+
+	<!-- Scripts
+	================================================== -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</body>
+
+
+<!-- Google Analytics
+================================================== -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49074811-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>

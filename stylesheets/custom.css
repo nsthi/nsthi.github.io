@@ -219,9 +219,6 @@ ul li:active{
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-  .fluidbox-wrap{
-    margin-left: 5% !important;
-  }
 
 }
 

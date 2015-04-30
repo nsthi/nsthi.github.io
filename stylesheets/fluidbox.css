@@ -42,3 +42,12 @@
   transition-delay: 0s, .25s; }
   .fluidbox-opened .fluidbox-ghost {
     transition-delay: .5s, 0s; }
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .fluidbox-wrap{
+    margin-left: 3% !important;
+  }
+
+}

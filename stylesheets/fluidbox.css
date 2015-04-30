@@ -1,3 +1,9 @@
+@media (min-width: 450px) {
+  .fluidbox-wrap{
+    margin-left: 0px !important;
+  }
+}
+
 .fluidbox {
   outline: none; 
 }
@@ -47,7 +53,7 @@
 /* Larger than mobile */
 @media (min-width: 400px) {
   .fluidbox-wrap{
-    margin-left: 3% !important;
+    margin-left: 3%;
   }
 
 }

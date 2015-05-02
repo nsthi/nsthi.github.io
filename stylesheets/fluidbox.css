@@ -1,21 +1,28 @@
-@media (min-width: 960px) {
-  .fluidbox-wrap{
-    margin-left: 0px !important;
-  }
-}
-
+@-webkit-keyframes fluidboxLoading {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotateX(0) rotateY(0); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg); } }
+@keyframes fluidboxLoading {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0) rotateY(0); }
+  50% {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg); } }
 .fluidbox {
-  outline: none; 
-}
+  outline: none; }
 
 .fluidbox-overlay {
   background-color: rgba(255, 255, 255, 0.85);
   cursor: pointer;
   cursor: -webkit-zoom-out;
   cursor: -moz-zoom-out;
+  cursor: zoom-out;
   opacity: 0;
   position: fixed;
-  z-index: 1010;
   top: 0;
   left: 0;
   bottom: 0;
@@ -25,35 +32,50 @@
 
 .fluidbox-wrap {
   background-position: center center;
-  width: 100%;
   background-size: cover;
   margin: 0 auto;
   position: relative;
-  z-index: 1010;
   transition: all 0.25s ease-in-out;
   /* To prevent flickering, we delay the showing of the image */ }
   .fluidbox-closed .fluidbox-wrap img {
-    transition: opacity 0 ease-in-out 5s; }
+    transition: opacity 0s ease-in-out 0.25s; }
 
 .fluidbox-ghost {
   background-size: 100% 100%;
   background-position: center center;
   position: absolute;
-  z-index: 1010;
   -webkit-transition-property: opacity, -webkit-transform;
   -moz-transition-property: opacity, -moz-transform;
   -o-transition-property: opacity, -o-transform;
   transition-property: opacity, transform;
-  transition-duration: 0, 0.25s;
-  transition-delay: 0s, .25s; }
+  transition-duration: 0s, 0.25s;
+  transition-delay: 0.25s, 0s; }
   .fluidbox-opened .fluidbox-ghost {
-    transition-delay: .5s, 0s; }
+    transition-delay: 0s, 0s; }
 
+.fluidbox-loader {
+  perspective: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .fluidbox-loader::before {
+    /* You can replace this with any color you want, or even a loading gif if desired */
+    background-color: rgba(255, 255, 255, 0.85);
+    content: '';
+    transform-style: preserve-3d;
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    padding-bottom: 20%; }
 
-/* Larger than mobile */
-@media (min-width: 400px) {
-  .fluidbox-wrap{
-    margin-left: 3%;
-  }
+.fluidbox-loading .fluidbox-loader::before {
+  -webkit-animation: fluidboxLoading 1s 0s infinite ease-in-out forwards;
+  animation: fluidboxLoading 1s 0s infinite ease-in-out forwards;
+  opacity: 1; }
 
-}
+/*# sourceMappingURL=fluidbox.css.map */

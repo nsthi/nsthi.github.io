@@ -29,4 +29,19 @@ $(document).ready(function(){
     // });
 	$('#portfolio a').fluidbox();
 
+	$('#porfolio').each(function() {
+	    var images = [],
+	        $fb = $(this).find('a.fluidbox');
+
+	    $f.find('img').each(function() {
+	        var image = $.Deferred();
+	        $(this).load(image.resolve).error(image.resolve);
+	        images.push(image);
+	    });
+
+	    $.when.apply(null, images).done(function() {
+	        $fb.trigger('recompute');
+	    });
+	});
+
 });

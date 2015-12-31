@@ -12,15 +12,31 @@
 
 	<meta name="description" content="my name is neil sethi. welcome to my webpage.">
 	<meta name="author" content="neil sethi">
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
   ================================================== -->
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/custom.css">
-	
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!-- Javascript
+  ================================================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready();
+
+		function switchColors() {
+			$('.header-box').switchClass("orange", "teal", 1000, "easeInOutQuad");
+		}
+
+	</script>
+
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -34,14 +50,26 @@
 	<!-- Primary Page Layout
 	================================================== -->
 	<div class="container" style="">
-		<div class="header-box">
-			<h2>Under Construction</h2>
+
+		<div class="header-box orange" onmouseover="switchColors();">
+			<h2>about</h2>
 		</div>
 		<br/>
-		<p> If you need to reach me, feel free to message me <a href="mailto:&#110;&#101;&#105;&#108;&#115;&#101;&#116;&#104;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">here</a>. <br/> In the mean time, here's what I've been listening to:
-		</p>
+		<p>
+			My name's Neil Sethi. I like whitespace, making playlists, 
+			taking pictures, and reading.
 
-		<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1214784042%3Aplaylist%3A4RB5t0mP8Fw3N9X4JjvPfz" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+			<br/>
+
+			Feel free to message me
+			<a href="mailto:&#110;&#101;&#105;&#108;&#115;&#101;&#116;&#104;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">here</a>,
+			and check out what I've been listening to this past year below:
+
+			<br/><br/>
+
+			<iframe src="http://8tracks.com/mixes/7461814/player_v3_universal" width="400" height="400" style="border: 0px none;"></iframe>
+
+		</p>
 
 	</div><!-- container -->
 

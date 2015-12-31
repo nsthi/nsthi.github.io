@@ -1,13 +1,53 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300);
 
-.header-box h2{
-  border: solid 3px black;
+@font-face {
+font-family: Moonlight;
+src: url("../fonts/Moon Light.otf") format("opentype");
+}
+
+
+.header-box h2 {
   font-size: 20px;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 1px;
-  padding: 12px 40px;
-  white-space: nowrap;
+
+}
+
+.teal {
+  background-image: url('../nav-bg-fill-blue.png');
+}
+
+.orange{
+  background-image: url('../nav-bg-fill-orange.png');
+}
+
+
+.header-box {
+  border: solid 3px black;
+
+  display: inline-block;
+  padding: 7px 40px;
+  margin: 50px 10px;
+  overflow: hidden;
+
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+
+  /*Sets the background image to be 'below' the button*/
+  /*Background images are set using the classes below*/
+  background-position: 0 -100%;
+  background-repeat: repeat-x;
+  transition: background-position .75s ease, color .75s;
+
+}
+
+.header-box:hover {
+  /*border: solid 1px gray;*/
+  background-position: 100% 50%;
+  color: white;
+  transition: background-position .75s ease, color .75s;
 }
 
 body{
@@ -15,13 +55,14 @@ body{
   margin-top: 15%;
 }
 
+h1, p, div {
+  font-family: 'Lato', sans-serif;
+}
+
 h1 {
     color: #222;
-    font-size: 3.5rem;
-    font-weight: 300;
     text-transform: uppercase;
     position: relative;
-    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
@@ -30,8 +71,34 @@ h1 {
 }
 
 p, div{
-  font-weight: 300;
-  font-family: 'Lato', sans-serif;
   color: #162521;
-  line-height: 25px
+  line-height: 25px;
+  font-size: 12px;
+}
+
+
+.waves {
+  height: 100px;
+  width: 70%;
+  margin: 25px auto;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+
+  -webkit-animation-name: wave;
+   -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+   animation-name: wave;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes wave {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+}
+
+@keyframes wave {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
 }

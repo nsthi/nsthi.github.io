@@ -5,6 +5,9 @@ font-family: Moonlight;
 src: url("../fonts/Moon Light.otf") format("opentype");
 }
 
+body{
+  -webkit-font-smoothing: antialiased;
+}
 
 .header-box h2 {
   font-size: 20px;

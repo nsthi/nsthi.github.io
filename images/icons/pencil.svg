@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<polygon fill="#EAEAEA" points="46.4,46.4 42,31.9 31.9,42 	"/>
+	<path fill="#EACA44" d="M14.5,4.3L13,2.9c0,0-2.9-2.9-5.8-2.9C3.2,0,0,3.2,0,7.2C0,10.2,2.9,13,2.9,13l1.4,1.4L14.5,4.3z"/>
+	<polygon fill="#469FCC" points="14.5,4.3 4.3,14.5 31.9,42 33.3,40.6 42,31.9 	"/>
+	<rect x="7.7" y="1.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 8.6915 -3.5998)" fill="#434854" width="2" height="14.3"/>
+	<polygon fill="#434854" points="40.8,44.7 46.4,46.4 44.7,40.8 	"/>
+	
+		<rect x="16.8" y="5.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.922 20.9528)" opacity="0.15" width="4.1" height="41"/>
+	
+		<rect x="24" y="-1.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.679 23.9526)" opacity="0.2" fill="#FFFFFF" width="4.1" height="41"/>
+	<polygon opacity="0.6" fill="#FFFFFF" points="44.7,40.8 46.4,46.4 42,31.9 39.1,34.8 43.6,41.9 	"/>
+	<polygon opacity="0.1" points="40.8,44.7 41.9,43.6 34.8,39.1 31.9,42 46.4,46.4 	"/>
+	<path opacity="0.15" d="M0,7.2C0,10.2,2.9,13,2.9,13l0,0l2.9-2.9L0.5,4.8C0.2,5.6,0,6.4,0,7.2z"/>
+	<path opacity="0.3" fill="#FFFFFF" d="M13,2.9c0,0-2.9-2.9-5.8-2.9C6.4,0,5.6,0.2,4.8,0.5l5.3,5.3L13,2.9L13,2.9z"/>
+</g>
+</svg>

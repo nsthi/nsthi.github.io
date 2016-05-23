@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300);
 
+/** 
+  HIGH LEVEL STYLES
+**/
+
 @font-face {
 font-family: Moonlight;
 src: url("../fonts/Moon Light.otf") format("opentype");
@@ -9,6 +13,66 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+body{
+  text-align: center;
+  margin-top: 15%;
+}
+
+h1, p, div {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+
+div {
+  color: #162521;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+
+a {
+  color: #0082fb;
+}
+
+/** 
+  Body specific changes
+**/
+
+img.emojione {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#photo_section h1 {
+  font-size: 2.5rem;
+}
+
+.social-icons {
+    margin-top: 3rem;
+}
+
+.social-icons a {
+  opacity: 0.7;
+  margin: 7px;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.social-icons img {
+  height: 40px;
+}
+
+/** 
+  FUN WAVE THING
+**/ 
 .header-box h2 {
   font-size: 20px;
   text-transform: uppercase;
@@ -24,7 +88,6 @@ body{
 .orange{
   background-image: url('../nav-bg-fill-orange.png');
 }
-
 
 .header-box {
   border: solid 3px black;
@@ -52,33 +115,6 @@ body{
   color: white;
   transition: background-position .75s ease, color .75s;
 }
-
-body{
-  text-align: center;
-  margin-top: 15%;
-}
-
-h1, p, div {
-  font-family: 'Lato', sans-serif;
-}
-
-h1 {
-    color: #222;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-}
-
-#photo_section h1{
-  font-size: 2.5rem;
-}
-
-p, div{
-  color: #162521;
-  line-height: 25px;
-  font-size: 12px;
-}
-
 
 .waves {
   height: 100px;
